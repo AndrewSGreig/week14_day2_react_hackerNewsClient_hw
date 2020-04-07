@@ -8,9 +8,9 @@ class App extends Component {
       {name: "Details", url: "https://hacker-news.firebaseio.com/v0/item/${storyId}.json" }
     ]
 
-    const storyDetails = []
+    const storyHeadlines = []
     return (
-      <NewsClientContainer storyLinks={storyLinks} storyDetails={storyDetails}/>
+      <NewsClientContainer storyLinks={storyLinks} storyHeadlines={storyHeadlines}/>
     );
   }
 }

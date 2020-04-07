@@ -48,27 +48,21 @@ class NewsClientContainer extends Component{
 
       for(let dataCount = 0; dataCount < dataList.length; dataCount++){
         // this.outputStoryHeadline(dataList[dataCount]);//.title
+        // {dataList[dataCount].title}
           headlines.push(dataList[dataCount].title)
+
+
         }
+        debugger;
       this.setState({headlines:headlines});
       // this.setState({ storyDetails: dataList});
-      // debugger;
-      // <p>data</p>
+      debugger;
 
-      // <p>data</p>
-      // this.beers = data.flat();
     })
 debugger;
-    // const detailUrl = this.props.storyLinks[1].url
+
 
   }
-
-
-  // outputStoryHeadline(dataListItem){
-  //     let title = dataListItem.title;
-  //     <p>title</p>
-  //     debugger;
-  // };
 
   render() {
     return(
@@ -78,9 +72,10 @@ debugger;
           // handleSelectChange={this.handleSelectChange}
           storyLinks={this.props.storyLinks}
         />
-        {this.state.headlines}
-        debugger;
-        // <Latest storyLinks = {this.state.storyLinks}/>
+        // {this.state.headlines}
+        <p>{this.props.storyHeadlines}</p>
+
+        <Latest storyHeadlines = {this.props.storyHeadlines}/>
 
       </div>
     )
